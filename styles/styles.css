@@ -3,12 +3,46 @@
   margin: 0;
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
   border: 1px solid red;
 }
+@font-face {
+  font-family: 'Rubik-normal';
+  src: url(../styles/fonts/Rubik-Medium.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'Rubik-italic';
+  src: url(../styles/fonts/Rubik-MediumItalic.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Rubik-light';
+  src: url(../styles/fonts/Rubik-Regular.ttf);
+  font-weight: normal;
+  font-style: italic;
+}
 html {
   height: 100vh;
   width: 100%;
+}
+
+h2,
+h2 span
+{
+  font-family: 'Rubik-normal';
+  font-weight: normal;
+}
+p {
+  font-family: 'Rubik-light';
+  font-weight: normal;
+}
+
+em {
+  font-family: 'Rubik-italic', sans-serif;
 }
 
 body {
@@ -35,6 +69,19 @@ form {
 #form-info {
   height: 25%;
   width: 100%;
+  padding: 0.8rem 11rem 2rem 2rem;
+  color: #3e412f;
+  background-color: #f1f2f3;  
+}
+#form-info > h2,
+#form-info > h2 >* {
+  font-size: 1.1rem;
+}
+
+#form-info span, 
+#form-info h2 {
+  display: block;
+  margin-top: 1rem;
 }
 
 #form-input {
@@ -45,4 +92,29 @@ form {
 #submit {
   height: 25%;
   width: 100%;
+  background-color: #f1f2f3;
+  padding: 1.2rem 2rem 2rem 2rem;
 }
+button[type='submit'] {
+  background-color: #596d48;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-family: 'Rubik-light', sans-serif; 
+  font-weight: normal;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+#submit p {
+  margin-top: 1.3rem;
+  font-size: 0.8rem;
+  color: #3e412f;
+}
+
+#submit a {
+  font-size: 0.8rem;
+  color: #848181;
+  text-decoration: none;
+  font-family: 'Rubik-light', sans-serif;
+  font-weight: normal;
+}
+
