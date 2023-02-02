@@ -13,10 +13,11 @@
     <section id="logo">
       logo
     </section>
-    <form action="http://httpbin.org/post" method="post">
+    <form action="http://httpbin.org/post" onsubmit="return passwordValidation()" method="post">
       <!-- section #2 -for form info -->
       <section id="form-info">
-        <h2>Do you want to get the best trip to a paradisiac island? Sign up
+        <h2>
+          Do you want to get the best trip to a paradisiac island? Sign up
           <em>now</em> to get started.
           <span>You know you want to.</span>
         </h2>
@@ -30,60 +31,84 @@
             <div class="form-input-box">
               <label for="first-name">FIRST NAME</label>
               <input
-                name="first-name"
                 type="text"
+                name="first-name"
                 id="first-name"
+                placeholder=" "
+                pattern="[A-Za-z]+[A-Za-z -]+[A-Za-z]+"
+                title="*Names must start and end with a letter and can contain only letters, spaces and -."
                 required />
-            </div>
+              <p>*Names must start and end with a letter and can contain only letters, spaces or -.</p>
+          </div>
             <div class="form-input-box">
               <label for="last-name">LAST NAME</label>
               <input
-                name="last-name"
                 type="text"
+                name="last-name"
                 id="last-name"
+                placeholder=" "
+                pattern="[A-Za-z]+[A-Za-z -]+[A-Za-z]+"
+                title="*Names must start and end with a letter and can contain only letters, spaces and -."
                 required />
-            </div>
+              <p>*Names must start and end with a letter and can contain only letters, spaces or -.</p>
+          </div>
             <div class="form-input-box">
               <label for="email">EMAIL</label>
               <input
-                name="email"
                 type="email"
+                name="email"
                 id="email"
+                placeholder=" "
                 required />
-            </div>
+              <p>*Email format must be username@domain.</p>
+          </div>
             <div class="form-input-box">
               <label for="phone-number">PHONE NUMBER</label>
               <input
-                name="phone-number"
                 type="tel"
+                name="phone-number"
                 id="phone-number"
+                placeholder=" "
+                pattern="[+][0-9|-]{2,5}[0-9]{9,11}"
+                title="Format: country code (+ max 5 digits) + number (9-11 digits) &#010;Ex: +41773456278"
                 required />
-            </div>
+              <p>*Phone number format must be country code (+ max 5 digits) + number (9-11 digits) &#010;Ex: +41773456278.</p>
+          </div>
             <div class="form-input-box">
               <label for="password">PASSWORD</label>
               <input
-                name="password"
                 type="password"
+                name="password"
                 id="password"
+                placeholder=" "
+                pattern="^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$"
+                title="Password needs to be at least 8 caracters and to contain at least one UpperCase letter, one lowerCase letter, one digit and one symbol"
                 required />
-            </div>
+              <p>*Password needs to be at least 8 caracters and to contain at least one UpperCase letter, one lowerCase letter, one digit and one symbol.</p>
+            <p id="password-no-match">*Passwords do not match!</p>
+          </div>
             <div class="form-input-box">
               <label for="password">CONFIRM PASSWORD</label>
               <input
-                name="password"
                 type="password"
-                id="password"
+                name="password-confirm"
+                id="password-confirm"
+                placeholder=" "
+                pattern="^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$"
+                title="Password needs to be at least 8 caracters and to contain at least one UpperCase letter, one lowerCase letter, one digit and one symbol"
                 required />
-            </div>
+              <p>*Password needs to be at least 8 caracters and to contain at least one UpperCase letter, one lowerCase letter, one digit and one symbol.</p>
           </div>
-          <button class="reset-btn" type="reset">Reset</button>
-        </section>
-          <!--  section #4 -for submit button -->
-          <section id="submit">
+          </div>
+        <button class="reset-btn" type="reset">Reset</button>
+      </section>
+      <!--  section #4 -for submit button -->
+      <section id="submit">
         <button type="submit">Create Account</button>
         <p>Already have an account? <a href="">Log in</a></p>
       </section>
     </form>
   </main>
+  <script src="./scripts/scripts.js"></script>
 </body>
 </html>
