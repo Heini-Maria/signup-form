@@ -117,10 +117,6 @@ form {
   border: 1px solid #E5E7EB;
 }
 
-.form-input-box input:focus {
-  border: 1px solid blue;
-}
-
 .reset-btn {
   background-color: #596d48;
   border: none;
