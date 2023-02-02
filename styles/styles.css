@@ -4,7 +4,7 @@
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 @font-face {
   font-family: 'Rubik-normal';
@@ -87,6 +87,45 @@ form {
 #form-input {
   height: 50%;
   width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+}
+
+.form-title h2 {
+  font-size: 1.1rem;
+}
+
+.form-user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+.form-input-box {
+  margin-bottom: 15px;
+}
+
+.form-input-box input {
+  height: 40px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+.form-input-box input:focus {
+  border: 1px solid blue;
+}
+
+.reset-btn {
+  background-color: #596d48;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-family: 'Rubik-light', sans-serif; 
+  font-weight: normal;
+  color: #fff;
+  padding: 0.3rem 1.3rem;
 }
 
 #submit {
@@ -97,6 +136,7 @@ form {
 }
 button[type='submit'] {
   background-color: #596d48;
+  border: none;
   border-radius: 8px;
   font-size: 0.8rem;
   font-family: 'Rubik-light', sans-serif; 
