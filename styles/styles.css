@@ -4,8 +4,9 @@
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
+
 @font-face {
   font-family: 'Rubik-normal';
   src: url(../styles/fonts/Rubik-Medium.ttf);
@@ -19,23 +20,25 @@
   font-weight: normal;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Rubik-light';
   src: url(../styles/fonts/Rubik-Regular.ttf);
   font-weight: normal;
   font-style: italic;
 }
+
 html {
   height: 100vh;
   width: 100%;
 }
 
 h2,
-h2 span
-{
+h2 span {
   font-family: 'Rubik-normal';
   font-weight: normal;
 }
+
 p {
   font-family: 'Rubik-light';
   font-weight: normal;
@@ -71,22 +74,66 @@ form {
   width: 100%;
   padding: 0.8rem 11rem 2rem 2rem;
   color: #3e412f;
-  background-color: #f1f2f3;  
+  background-color: #f1f2f3;
 }
-#form-info > h2,
-#form-info > h2 >* {
+
+#form-info>h2,
+#form-info>h2>* {
   font-size: 1.1rem;
 }
 
-#form-info span, 
+#form-info span,
 #form-info h2 {
   display: block;
   margin-top: 1rem;
 }
 
 #form-input {
-  height: 50%;
+  min-height: 50%;
   width: 100%;
+}
+
+form>div {
+  height: fit-content;
+  width: 300px;
+}
+
+input {
+  border: 2px solid blue;
+  border-radius: 3px;
+  outline: none;
+}
+
+input:hover {
+  outline: 1px solid grey;
+}
+
+input:focus {
+  outline: 2px solid black;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  border: 2px solid red;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid+p {
+  display: block;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid green;
+}
+
+input~p {
+  height: fit-content;
+  width: 100%;
+  display: none;
+  color: red;
+  font-size: 12px;
 }
 
 #submit {
@@ -95,15 +142,17 @@ form {
   background-color: #f1f2f3;
   padding: 1.2rem 2rem 2rem 2rem;
 }
+
 button[type='submit'] {
   background-color: #596d48;
   border-radius: 8px;
   font-size: 0.8rem;
-  font-family: 'Rubik-light', sans-serif; 
+  font-family: 'Rubik-light', sans-serif;
   font-weight: normal;
   color: #fff;
   padding: 0.5rem 1.5rem;
 }
+
 #submit p {
   margin-top: 1.3rem;
   font-size: 0.8rem;
@@ -117,4 +166,3 @@ button[type='submit'] {
   font-family: 'Rubik-light', sans-serif;
   font-weight: normal;
 }
-

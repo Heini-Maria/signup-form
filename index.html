@@ -13,7 +13,7 @@
     <section id="logo">
       logo
     </section>
-    <form action="http://httpbin.org/post" method="post">
+    <form action="http://httpbin.org/post" onsubmit="return passwordValidation()" method="post">
       <!-- section #2 -for form info -->
       <section id="form-info">
         <h2>Do you want to get the best trip to a paradisiac island? Sign up
@@ -27,50 +27,75 @@
           <div>
             <label for="first-name">FIRST NAME</label>
             <input
+              type="text"
               name="first-name"
               type="text"
               id="first-name"
+              placeholder=" "
+              pattern="[A-Za-z]+[A-Za-z -]+[A-Za-z]+"
+              title="*Names must start and end with a letter and can contain only letters, spaces and -."
               required />
+              <p>*Names must start and end with a letter and can contain only letters, spaces or -.</p>
           </div>
           <div>
             <label for="last-name">LAST NAME</label>
             <input
+              type="text"
               name="last-name"
               type="text"
               id="last-name"
+              placeholder=" "
+              pattern="[A-Za-z]+[A-Za-z -]+[A-Za-z]+"
+              title="*Names must start and end with a letter and can contain only letters, spaces and -."
               required />
+              <p>*Names must start and end with a letter and can contain only letters, spaces or -.</p>
           </div>
           <div>
             <label for="email">EMAIL</label>
             <input
-              name="email"
               type="email"
+              name="email"
               id="email"
+              placeholder=" "
               required />
+              <p>*Email format must be username@domain.</p>
           </div>
           <div>
             <label for="phone-number">PHONE NUMBER</label>
             <input
-              name="phone-number"
               type="tel"
+              name="phone-number"
               id="phone-number"
+              placeholder=" "
+              pattern="[+][0-9|-]{2,5}[0-9]{9,11}"
+              title="Format: country code (+ max 5 digits) + number (9-11 digits) &#010;Ex: +41773456278"
               required />
+              <p>*Phone number format must be country code (+ max 5 digits) + number (9-11 digits) &#010;Ex: +41773456278.</p>
           </div>
           <div>
             <label for="password">PASSWORD</label>
             <input
-              name="password"
-              type="password"
-              id="password"
-              required />
+            type="password"
+            name="password"
+            id="password"
+            placeholder=" "
+            pattern="^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$"
+            title="Password needs to be at least 8 caracters and to contain at least one UpperCase letter, one lowerCase letter, one digit and one symbol"
+            required>
+            <p>*Password needs to be at least 8 caracters and to contain at least one UpperCase letter, one lowerCase letter, one digit and one symbol.</p>
+            <p id="password-no-match">*Passwords do not match!</p>
           </div>
           <div>
             <label for="password">CONFIRM PASSWORD</label>
             <input
-              name="password"
-              type="password"
-              id="password"
-              required />
+            type="password"
+            name="password-confirm"
+            id="password-confirm"
+            placeholder=" "
+            pattern="^(?=.{8,}$)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*\W).*$"
+            title="Password needs to be at least 8 caracters and to contain at least one UpperCase letter, one lowerCase letter, one digit and one symbol"
+            required>
+            <p>*Password needs to be at least 8 caracters and to contain at least one UpperCase letter, one lowerCase letter, one digit and one symbol.</p>
           </div>
           <button type="reset">Reset</button>
         </section>
@@ -81,5 +106,6 @@
       </section>
     </form>
   </main>
+  <script src="./scripts/scripts.js"></script>
 </body>
 </html>
