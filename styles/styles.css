@@ -71,7 +71,7 @@ main {
 }
 
 .header-section {
-  background-image: url(../Images/jackson-david-8IVdUH8feiY-unsplash.jpg);
+  background-image: url(../Images/matthew-brodeur-DH_u2aV3nGM-unsplash.jpg);
   background-size: cover;
   background-position: center;
  /*  height: 100%; */
@@ -94,8 +94,8 @@ main {
 }
 
 .header-content .logo-img img {
-  height: 16vh;
-  border-radius: 50%;
+  height: 60px;
+  margin-right: 10px;
 }
 
 .header-content .name h1 {
