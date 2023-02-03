@@ -108,22 +108,12 @@ main {
   font-style: oblique;
 }
 
-@media (min-width: 768px) {
-  .header-content {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 20%;
-  }
-}
-
 form {
   height: 100%;
   width: 65%;
 }
 
-#form-info {
+.form-info {
   height: 25%;
   width: 100%;
   padding: 0.8rem 11rem 2rem 2rem;
@@ -142,38 +132,51 @@ form {
   margin-top: 1rem;
 }
 
-#form-input {
+.form-input {
   /* height: 50% */
   min-height: 50%;
   width: 100%;
   background-color: #fff;
   padding: 25px 30px;
   box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.form-title h2 {
+.form-title {
   font-size: 1.1rem;
 }
 
 .form-user-details {
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0 12px 0;
 }
 
 .form-input-box {
-  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  width: 50%;
+}
+
+.form-input-box label {
+  width: 95%;
+  margin: 5px 0;
 }
 
 .form-input-box input {
   height: 40px;
-  width: 100%;
+  width: 95%;
   border-radius: 8px;
+  outline: none;
   border: 1px solid #E5E7EB;
+  padding: 0 10px;
 }
 
-.reset-btn {
+button[type='reset'] {
   background-color: #596d48;
   border: none;
   border-radius: 8px;
@@ -182,6 +185,11 @@ form {
   font-weight: normal;
   color: #fff;
   padding: 0.3rem 1.3rem;
+  cursor: pointer;
+}
+
+.form-input button:hover {
+  background: #6da73b;
 }
 
 form>div {
@@ -227,7 +235,7 @@ input~p {
   font-size: 12px;
 }
 
-#submit {
+.submit {
   height: 25%;
   width: 100%;
   background-color: #f1f2f3;
@@ -243,6 +251,11 @@ button[type='submit'] {
   font-weight: normal;
   color: #fff;
   padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+.submit button:hover {
+  background: #6da73b;
 }
 
 .submit p {
@@ -260,5 +273,19 @@ button[type='submit'] {
 }
 .submit a:hover {
  text-decoration: underline;
+ color: #6da73b;
 }
 
+@media (max-width: 768px) {
+  .header-content {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20%;
+  }
+  .form-input-box {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+}
