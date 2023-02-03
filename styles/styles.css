@@ -4,7 +4,6 @@
   padding: 0;
   font-family: 'Courier New', Courier, monospace;
   font-size: 18px;
-  /* border: 1px solid red; */
 }
 @font-face {
   font-family: 'Bubblegum';
@@ -40,9 +39,10 @@ html {
 }
 
 h2,
-h2 span {
+h2>* {
   font-family: 'Rubik-normal';
   font-weight: normal;
+  font-size: 1.8rem;
 }
 
 p {
@@ -92,14 +92,12 @@ main {
 }
 
 .header-content .logo-img img {
-  height: 60px;
+  width: 10vw;
   margin-right: 10px;
 }
 
 .header-content .name h1 {
-  /* font-size: 6vh; */
-  /* font-family: 'Rubik-italic', sans-serif; */
-  font-size: 5vh;
+  font-size: 4rem;
   font-family: 'Bubblegum', sans-serif;
   text-transform: uppercase;
   color: #fff;
@@ -109,6 +107,7 @@ main {
 form {
   height: 100%;
   width: 65%;
+  background-color: #f1f2f3;
 }
 
 .form-info {
@@ -116,34 +115,23 @@ form {
   width: 100%;
   padding: 0.8rem 11rem 2rem 2rem;
   color: #3e412f;
-  background-color: #f1f2f3;
 }
 
-.form-info>h2,
-.form-info>h2>* {
-  font-size: 1.1rem;
-}
-
-.form-info span,
-.form-info h2 {
+.form-info h2,
+.form-info span {
   display: block;
-  margin-top: 1rem;
+  margin-top: 2.5rem;
 }
 
 .form-input {
   height: 50%;
- /*  min-height: 50%; */
   width: 100%;
   background-color: #fff;
-  padding: 2.5rem 2rem;
-  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+  padding: 2.5rem;
+  box-shadow: 7px 8px 20px 3px rgba(0,0,0,0.3);
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-direction: column;
-}
-
-.form-title {
-  font-size: 1.1rem;
 }
 
 .form-user-details {
@@ -162,13 +150,12 @@ form {
 
 .form-input-box label {
   width: 95%;
-  font-size: 0.6rem;
+  font-size: 1.1rem;
   font-family: 'Rubik-light', sans-serif ;
-  margin: 5px 0;
 }
 
 .form-input-box input {
-  height: 25px;
+  height: 50px;
   width: 80%;
   border-radius: 8px;
   outline: none;
@@ -184,7 +171,7 @@ button[type='reset'] {
   font-family: 'Rubik-light', sans-serif;
   font-weight: normal;
   color: #fff;
-  padding: 0.3rem 1.3rem;
+  padding: 0.5rem 1.3rem;
   cursor: pointer;
 }
 
@@ -238,8 +225,7 @@ input~p {
 .submit {
   height: 25%;
   width: 100%;
-  background-color: #f1f2f3;
-  padding: 1.2rem 2rem 2rem 2rem;
+  padding: 2.5rem;
 }
 
 button[type='submit'] {
@@ -250,7 +236,7 @@ button[type='submit'] {
   font-family: 'Rubik-light', sans-serif;
   font-weight: normal;
   color: #fff;
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   cursor: pointer;
 }
 
@@ -259,7 +245,7 @@ button[type='submit'] {
 }
 
 .submit p {
-  margin-top: 1.3rem;
+  margin-top: 1.8rem;
   font-size: 0.8rem;
   color: #3e412f;
 }
