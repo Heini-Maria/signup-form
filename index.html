@@ -11,11 +11,20 @@
   <main>
     <!-- section #1 -for picture and logo ...header? -->
     <section id="logo">
-      logo
+      <div class="header-section">
+        <section class="header-content">
+            <figure class="logo-img">
+                <img src="Images/istockphoto-470148277-1024x1024.jpg" alt="earth-logo">
+            </figure>
+            <figcaption class="name" >
+                <h1>Paradisiac Island</h1>
+            </figcaption>
+        </section>
+    </div>
     </section>
     <form action="http://httpbin.org/post" onsubmit="return passwordValidation()" method="post">
       <!-- section #2 -for form info -->
-      <section id="form-info">
+      <section class="form-info">
         <h2>
           Do you want to get the best trip to a paradisiac island? Sign up
           <em>now</em> to get started.
@@ -23,7 +32,7 @@
         </h2>
       </section>
       <!-- section #3 -for form input -->
-      <section id="form-input">
+      <section class="form-input">
         <div>
           <h2 class="form-title">Let's do this!</h2>
         </div>
@@ -62,17 +71,17 @@
               required />
             <p>*Email format must be username@domain.</p>
           </div>
-          <div class="form-input-box">
-            <label for="phone-number">PHONE NUMBER</label>
-            <input
-              type="tel"
-              name="phone-number"
-              id="phone-number"
-              placeholder=" "
-              pattern="[+][0-9|-]{2,5}[0-9]{9,11}"
-              title="Format: country code (+ max 5 digits) + number (9-11 digits) &#010;Ex: +41773456278"
-              required />
-            <p>*Phone number format must be country code (+ max 5 digits) + number (9-11 digits) &#010;Ex: +41773456278.</p>
+            <div class="form-input-box">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input
+                type="tel"
+                name="phone-number"
+                id="phone-number"
+                placeholder=" "
+                pattern="[+][0-9|-]{1,7}[0-9]{8,11}"
+                title="Format: country code (+ max 7 digits or -) + number (8-11 digits) &#010;Ex: +41773456278"
+                required />
+              <p>*Phone number format must be country code (+ max 7 digits or -) + number (8-11 digits) <br>Ex: +41773456278.</p>
           </div>
           <div class="form-input-box">
             <label for="password">PASSWORD</label>
@@ -105,7 +114,7 @@
         </div>
       </section>
       <!--  section #4 -for submit button -->
-      <section id="submit">
+      <section class="submit">
         <button type="submit">Create Account</button>
         <p>Already have an account? <a href="">Log in</a></p>
       </section>
