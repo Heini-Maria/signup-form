@@ -67,7 +67,8 @@ main {
 .header-section {
   background-image: url(../Images/jackson-david-8IVdUH8feiY-unsplash.jpg);
   background-size: cover;
-  height: 100vh;
+  background-position: center;
+  height: 109vh;
   width: 100%;
   position: relative;
 }
