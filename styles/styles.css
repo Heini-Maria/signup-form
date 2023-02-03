@@ -93,31 +93,45 @@ form {
   width: 100%;
   background-color: #fff;
   padding: 25px 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.form-title h2 {
+.form-title {
   font-size: 1.1rem;
 }
 
 .form-user-details {
+  padding: 20px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 20px 0 12px 0;
+  
 }
 
 .form-input-box {
-  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+  width: 50%;
+}
+
+.form-input-box label {
+  width: 95%;
+  margin: 5px 0;
 }
 
 .form-input-box input {
   height: 40px;
-  width: 100%;
+  width: 95%;
   border-radius: 8px;
+  outline: none;
   border: 1px solid #E5E7EB;
+  padding: 0 10px;
 }
 
-.reset-btn {
+button[type='reset'] {
   background-color: #596d48;
   border: none;
   border-radius: 8px;
@@ -126,6 +140,11 @@ form {
   font-weight: normal;
   color: #fff;
   padding: 0.3rem 1.3rem;
+  cursor: pointer;
+}
+
+#form-input button:hover {
+  background: #6da73b;
 }
 
 form>div {
@@ -187,6 +206,11 @@ button[type='submit'] {
   font-weight: normal;
   color: #fff;
   padding: 0.5rem 1.5rem;
+  cursor: pointer;
+}
+
+#submit button:hover {
+  background: #6da73b;
 }
 
 #submit p {
@@ -201,4 +225,15 @@ button[type='submit'] {
   text-decoration: none;
   font-family: 'Rubik-light', sans-serif;
   font-weight: normal;
+}
+
+#submit a:hover {
+  color: #6da73b;
+}
+
+@media(max-width: 700px) {
+  .form-input-box {
+    margin-bottom: 12px;
+    width: 100%;
+  }
 }
