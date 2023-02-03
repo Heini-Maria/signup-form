@@ -11,7 +11,7 @@ ADD IMAGE HERE
 
 ## About the project
 
-This project was created in the Brainnest Advanced Frontend Development course. The purpose was build a page with a functional sign up form based on given design. 
+This project was created in the Brainnest Advanced Frontend Development course. The purpose of the project was to build a page with a functional sign up form, based on given design. 
 
 ## Features
 
