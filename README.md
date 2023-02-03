@@ -1,12 +1,36 @@
 # SignUp Form
 
-Description
+Landing page -team project with a user friendly sign up form. 
 
-```
-    Team
+## Preview
 
-  Heini-Maria Annika Kotipelto
-  Hossein Ghanbari
-  Ståle Konstad Bjørdal
-  Alexandru-Catalin Barcan
-```
+See the final product:
+
+
+ADD IMAGE HERE
+
+## About the project
+
+This project was created in the Brainnest Advanced Frontend Development course. The purpose was build a page with a functional sign up form based on given design. 
+
+## Features
+
+* input validation
+* instant feedback for the user
+* error messages
+
+## Technologies
+
+* HTML
+* CSS
+* JavaScript
+* Git
+
+## Team
+
+This project was a team effort from:
+
+ * Hossein Ghanbari  / @artsyl3 
+ * Ståle Konstad Bjørdal / @SnuggleTrouble 
+ * Alexandru-Catalin Barcan / @cbarcan 
+ * Heini-Maria Kotipelto @Heini-Maria
