@@ -166,7 +166,7 @@ form {
   border: none;
   border-radius: 8px;
   font-size: 0.8rem;
-  font-family: 'Rubik-light', sans-serif; 
+  font-family: 'Rubik-light', sans-serif;
   font-weight: normal;
   color: #fff;
   padding: 0.3rem 1.3rem;
@@ -188,7 +188,7 @@ input:hover {
 }
 
 input:focus {
-  outline: 2px solid black;
+  border: 2px solid blue;
 }
 
 input:not(:focus):not(:placeholder-shown):invalid {
@@ -199,7 +199,7 @@ input:not(:focus):not(:placeholder-shown):invalid+p {
   display: block;
 }
 
-input:focus:invalid {
+input:focus:not(:placeholder-shown):invalid {
   border: 2px solid red;
 }
 
