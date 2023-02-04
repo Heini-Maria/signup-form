@@ -4,7 +4,7 @@ Landing page -team project with a user friendly sign up form.
 
 ## Preview
 
-See the final product: https://heini-maria.github.io/admin-dashboard/
+See the final product: https://heini-maria.github.io/signup-form/
 
 
 ADD IMAGE HERE
