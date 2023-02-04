@@ -7,7 +7,7 @@ Landing page -team project with a user friendly sign up form.
 See the final product: https://heini-maria.github.io/signup-form/
 
 
-ADD IMAGE HERE
+![image](https://user-images.githubusercontent.com/115211431/216787751-c6c8746d-b388-437f-800d-03b0a87b2dc6.png)
 
 ## About the project
 
